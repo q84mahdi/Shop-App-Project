@@ -11,7 +11,8 @@ export const metadata = {
 
 export const revalidate = 60;
 
-function ProductsPage({ searchParams }) {
+async function ProductsPage(props) {
+  const searchParams = await props.searchParams;
   return (
     <div className="px-4 lg:px-6">
       <div className="mb-6 flex flex-col justify-between gap-3 md:flex-row md:items-center">
