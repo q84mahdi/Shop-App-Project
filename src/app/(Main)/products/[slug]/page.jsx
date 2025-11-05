@@ -7,6 +7,8 @@ import { notFound } from "next/navigation";
 import { FaChevronRight } from "react-icons/fa6";
 import BackButton from "@/ui/BackButton";
 
+export const revalidate = 60;
+
 export const metadata = {
   title: "جزئیات محصول",
   description: "صفحه جزئیات محصول اپلیکیشن فروشگاهی",

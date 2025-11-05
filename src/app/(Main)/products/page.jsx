@@ -9,7 +9,7 @@ export const metadata = {
   description: "صفحه محصولات اپلیکیشن فروشگاهی",
 };
 
-export const revalidate = 600;
+export const revalidate = 60;
 
 function ProductsPage({ searchParams }) {
   return (
