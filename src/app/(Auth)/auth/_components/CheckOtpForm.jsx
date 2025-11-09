@@ -36,7 +36,10 @@ function CheckOtpForm({
   }, [time]);
 
   return (
-    <form onSubmit={(e) => onSubmit(e)} className="formLayout gap-4">
+    <form
+      onSubmit={(e) => onSubmit(e)}
+      className="formLayout mx-4 max-w-md gap-4"
+    >
       <h1 className="text-lg font-bold text-black">تایید شماره موبایل</h1>
 
       {otpResponse ? (
@@ -56,7 +59,7 @@ function CheckOtpForm({
           <input
             {...props}
             style={{}}
-            className="bg-white w-10 rounded-lg border border-secondary-400 py-2 text-center leading-none text-secondary-900 transition hover:border-primary-700 focus:border-2 focus:border-primary-700 focus:outline-none"
+            className="w-8 rounded-lg border border-secondary-400 bg-white py-1 text-center leading-none text-secondary-900 transition hover:border-primary-700 focus:border-2 focus:border-primary-700 focus:outline-none md:w-10 md:py-2"
           />
         )}
         containerStyle={{

@@ -39,7 +39,10 @@ function CompleteProfilePage() {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="formLayout">
+    <form
+      onSubmit={handleSubmit(onSubmit)}
+      className="formLayout mx-4 max-w-md"
+    >
       <h1 className="text-lg font-bold text-black">تکمیل اطلاعات</h1>
 
       <p className="text-sm text-secondary-600">
