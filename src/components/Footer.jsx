@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { IoHome } from "react-icons/io5";
 import { TbPackages } from "react-icons/tb";
@@ -6,10 +8,15 @@ import { CiHeadphones, CiLaptop, CiMobile3 } from "react-icons/ci";
 import { BsTabletLandscape } from "react-icons/bs";
 import { LuUserRound } from "react-icons/lu";
 import { RiAdminLine } from "react-icons/ri";
+import { usePathname } from "next/navigation";
 
 function Footer() {
+  const pathname = usePathname();
+
   return (
-    <div className="mt-10 min-h-[300px] w-full bg-primary-100/40">
+    <div
+      className={`mt-10 min-h-[300px] w-full bg-primary-100/40 ${pathname.includes("/products/") && "mb-44 md:mb-0"}`}
+    >
       <div className="container flex flex-col gap-x-12 gap-y-10 px-6 py-12 text-black md:flex-row lg:gap-x-24 xl:max-w-screen-xl xl:gap-x-32">
         {/* Main Links */}
         <div>
@@ -111,7 +118,7 @@ function Footer() {
             <li>
               <Link
                 target="_blank"
-                href={"https://www.linkedin.com/in/q-mahdi84"}
+                href={"https://www.linkedin.com/in/q84mahdi"}
                 className="flex items-center gap-1 transition-all duration-200 hover:text-primary-900"
               >
                 <FaLinkedin />
@@ -122,7 +129,7 @@ function Footer() {
             <li>
               <Link
                 target="_blank"
-                href={"https://github.com/mahdi-q"}
+                href={"https://github.com/q84mahdi"}
                 className="flex items-center gap-1 transition-all duration-200 hover:text-primary-900"
               >
                 <FaGithub />
@@ -133,7 +140,7 @@ function Footer() {
             <li>
               <Link
                 target="_blank"
-                href={"https://instagram.com/q.mahdi84"}
+                href={"https://instagram.com/q84mahdi"}
                 className="flex items-center gap-1 transition-all duration-200 hover:text-primary-900"
               >
                 <FaInstagram />

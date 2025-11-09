@@ -15,7 +15,7 @@ function ProductDetails({ product }) {
           <ImageCover src={product.imageLinkUrl} fill priority />
         </div>
 
-        <div className="fixed bottom-0 left-0 w-full rounded-t-xl bg-secondary-50/70 px-4 py-6 md:relative md:bg-transparent md:px-0">
+        <div className="fixed bottom-0 left-0 w-full rounded-t-xl bg-secondary-50/60 px-4 py-6 backdrop-blur-sm md:relative md:bg-transparent md:px-0">
           {/* Product Price */}
           <div className="mb-6 flex items-start justify-between">
             <span className="text-xl font-bold">قیمت:</span>
